@@ -1,6 +1,6 @@
 # EZSwap App
 This is only a test project!
-EZSwap is a decentralized application (dApp) that enables users to seamlessly swap digital assets on the blockchain. Built on Ethereum, EZSwap leverages smart contracts to facilitate secure, transparent, and fast transactions without the need for intermediaries.
+EZSwap is a decentralized application (dApp) that enables users to seamlessly swap digital assets on the blockchain. Built on Ethereum and web3.js, EZSwap leverages smart contracts to facilitate secure, transparent, and fast transactions without the need for intermediaries.
 ## Prerequisites
 
 Before you start, make sure you have the following installed:
