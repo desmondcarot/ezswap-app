@@ -36,6 +36,7 @@ npm install identicon
 npm install --save-dev react-app-rewired crypto-browserify stream-browserify assert stream-http https-browserify os-browserify url buffer process
 npm install @openzeppelin/contracts
 npm install ethers
+```
 
 ### Step 2: MetaMask
 
@@ -51,5 +52,28 @@ In MetaMask, go to Import Account and paste the private key.
 ### Step 3: Compile and Deploy Smart contract
 
 ```bash
-- truffle compile
-- truffle migrate --reset
+truffle compile
+truffle migrate --reset
+```
+
+### Step 4: Run the webapp
+
+```bash
+npm start
+```
+
+```
+File Structure
+ezswap-app/
+│
+├── contracts/            # Solidity smart contracts
+├── migrations/           # Deployment scripts
+├── src/
+│   ├── components/       # React components
+│   ├── pages/            # React pages
+│   ├── App.js            # Main React component
+│   └── index.js          # Entry point for React
+├── test/                 # Tests for smart contracts
+├── truffle-config.js     # Truffle configuration file
+└── package.json          # Project dependencies and scripts
+```
