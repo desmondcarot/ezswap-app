@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# EZSwap App
+This is only a test project!
+EZSwap is a decentralized application (dApp) that enables users to seamlessly swap digital assets on the blockchain. Built on Ethereum, EZSwap leverages smart contracts to facilitate secure, transparent, and fast transactions without the need for intermediaries.
+## Prerequisites
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Before you start, make sure you have the following installed:
 
-## Available Scripts
+- **Node.js** (with npm)
+- **Yarn** (optional but recommended)
+- **MetaMask** browser extension
+- **Ganache** (for local blockchain testing)
+- **Visual Studio Code** (or any code editor)
 
-In the project directory, you can run:
+## Setup Instructions
 
-### `npm start`
+### Step 1: Install Dependencies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open **Windows PowerShell** and run the following commands to install necessary packages:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+yarn add eslint-config-react-app -D
+yarn add eslint-config-react -D
+yarn add --dev eslint-config-react-app
+npm install react
+npm install --save-dev @types/react
+npm install bootstrap
+npm install --save-dev chai
+npm install chai-as-promised
+npm install --global mocha
+npm install eslint
+npm install --save-dev @babel/register
+npm install --save-dev @babel/core
+npm install babel-preset-es2015 --save-dev
+npm install c3
+npm install identicon
+npm install --save-dev react-app-rewired crypto-browserify stream-browserify assert stream-http https-browserify os-browserify url buffer process
+npm install @openzeppelin/contracts
+npm install ethers
 
-### `npm test`
+### Step 2: MetaMask
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Install the MetaMask plugin in your browser.
+- Log in to MetaMask.
 
-### `npm run build`
+### Step 3: Start Ganache
+Open Ganache and click the QuickStart button to start a local blockchain testnet.
+Import the second dummy account into MetaMask:
+Copy the private key from Ganache's 2nd account.
+In MetaMask, go to Import Account and paste the private key.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Step 3: Compile and Deploy Smart contract
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+- truffle compile
+- truffle migrate --reset
